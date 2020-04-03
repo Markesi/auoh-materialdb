@@ -19,7 +19,7 @@ app.use( (req, res, next)=>{
 //CRUD operations
 
 // CREATE
-
+app.post("/api/material", material_controller_api.api_post_material);
 // READ
 
 // Having a domain: api.domain.com/materials
