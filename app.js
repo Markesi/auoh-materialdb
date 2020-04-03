@@ -12,14 +12,16 @@ app.use(body_parser.urlencoded({extended:true})); // material/id
 app.use( (req, res, next)=>{
     console.log(req.method, ' ', req.path);
     next();
-}); // GET /api/material
+}); 
+
+// GET /api/material
 
 //RESTful API
 
 //CRUD operations
 
 // CREATE
-app.post("/api/material", material_controller_api.api_post_material);
+app.post("/api/material", material_controller.api_post_material);
 // READ
 
 // Having a domain: api.domain.com/materials
