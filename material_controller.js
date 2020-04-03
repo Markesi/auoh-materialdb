@@ -3,6 +3,7 @@
 
 //CREATE
 const api_post_material = (req, req, next) =>{
+    console.log('api_post_material');
     let data = req.body;
     console.log(data);
     res.end(JSON.stringify(data));
