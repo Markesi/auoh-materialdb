@@ -32,6 +32,8 @@ app.get("/api/materials", material_controller.api_get_materials);
 
 
 //DELETE
+app.delete("/api/material/:id", material_controller.api_delete_material);
+
 // change password in password and test in materialdb (db name)
 const database_uri = "mongodb+srv://server:YLkD1bOuprLl9oHp@cluster0-tvgsl.mongodb.net/materialdb?retryWrites=true&w=majority";
 
